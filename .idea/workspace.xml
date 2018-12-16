@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e646b85-872f-42e6-b472-732c622169c8" name="Default Changelist" comment="" />
+    <list default="true" id="9e646b85-872f-42e6-b472-732c622169c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MainServer/handler/MOBAServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/Protocol/IProtocolBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/Protocol/IProtocolBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/Protocol/ProtocolBytes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/Protocol/ProtocolBytes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/Protocol/ProtocolStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/Protocol/ProtocolStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/test/client/TestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/test/client/TestClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/test/server/TestServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/test/server/TestServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/test/server/TestServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/test/server/TestServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MOBADemoServer/test/server/TestServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MOBADemoServer/test/server/TestServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protocol/IProtocolBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protocol/IProtocolBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protocol/ProtocolBytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protocol/ProtocolBytes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protocol/ProtocolStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protocol/ProtocolStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/client/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/client/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/server/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/server/TestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/server/TestServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/server/TestServerHandler.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,30 +30,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/server/TestServer.java">
+        <entry file="file://$PROJECT_DIR$/src/MainServer/MOBAServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="37" column="62" lean-forward="true" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+            <state relative-caret-position="325">
+              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#849#1085#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
+                <element signature="e#1208#1701#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MainServer/handler/MOBAServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/server/decoder/MessageEncoder.java">
+        <entry file="file://$PROJECT_DIR$/src/ProtocolDispatcher/HandlePlayerMsg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+            <state relative-caret-position="266">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/server/TestServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1061#1490#0" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,57 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/server/TestServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/server/decoder/MyDecoder1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Util/BitConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Protocol/ProtocolBytes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="192">
+              <caret line="15" column="67" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Protocol/ProtocolStr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="146">
+              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,22 +105,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/PlayerLogic/Scene/ScenePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="312">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PlayerLogic/Scene/Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/server/EchoServerHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/Protocol/ProtocolBytes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="792">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,6 +157,9 @@
       <find>我他妈</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -165,30 +174,42 @@
         <option value="$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler2.java" />
         <option value="$PROJECT_DIR$/src/test/client/SimpleClient.java" />
         <option value="$PROJECT_DIR$/src/Protocol/ProtocolBase.java" />
-        <option value="$PROJECT_DIR$/src/Protocol/IProtocolBase.java" />
         <option value="$PROJECT_DIR$/src/test/server/decoder/MyDecoder.java" />
         <option value="$PROJECT_DIR$/src/test/server/decoder/MessageEncoder.java" />
         <option value="$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler.java" />
         <option value="$PROJECT_DIR$/src/test/server/OnlyReceiveServer.java" />
-        <option value="$PROJECT_DIR$/src/test/server/TestServer.java" />
         <option value="$PROJECT_DIR$/src/test/server/decoder/MyDecoder1.java" />
-        <option value="$PROJECT_DIR$/src/Protocol/ProtocolStr.java" />
         <option value="$PROJECT_DIR$/src/Util/BitConverter.java" />
-        <option value="$PROJECT_DIR$/src/Protocol/ProtocolBytes.java" />
-        <option value="$PROJECT_DIR$/src/test/server/TestServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/test1.java" />
         <option value="$PROJECT_DIR$/src/test/client/TestClient.java" />
+        <option value="$PROJECT_DIR$/src/test/server/TestServer.java" />
+        <option value="$PROJECT_DIR$/src/Protocol/IProtocolBase.java" />
+        <option value="$PROJECT_DIR$/src/Protocol/ProtocolBytes.java" />
+        <option value="$PROJECT_DIR$/src/Protocol/ProtocolStr.java" />
+        <option value="$PROJECT_DIR$/src/PlayerLogic/ScenePlayer.java" />
+        <option value="$PROJECT_DIR$/src/PlayerLogic/Scene/ScenePlayer.java" />
+        <option value="$PROJECT_DIR$/src/PlayerLogic/Scene/Scene.java" />
+        <option value="$PROJECT_DIR$/src/test/server/decoder/MessageEncoder1.java" />
+        <option value="$PROJECT_DIR$/src/test/server/TestServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/MainServer/MOBAServer.java" />
+        <option value="$PROJECT_DIR$/src/ProtocolDispatcher/HandlePlayerMsg.java" />
+        <option value="$PROJECT_DIR$/src/MainServer/handler/MOBAServerHandler.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1371" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="800" />
     <option name="height" value="860" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,7 +226,13 @@
               <item name="MOBADemoServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="MOBADemoServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="MainServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MOBADemoServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MOBADemoServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MOBADemoServer" type="b2602c69:ProjectViewProjectNode" />
@@ -215,17 +242,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544774167930" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544976907052" />
     <property name="last_opened_file_path" value="D:/java外部包/protobuf-java-3.6.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.server.decoder" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -239,20 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestClient">
-    <configuration name="EchoServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.server.EchoServer" />
-      <module name="MOBADemoServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestServer">
     <configuration name="OnlyReceiveServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.server.OnlyReceiveServer" />
       <module name="MOBADemoServer" />
@@ -305,20 +323,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.test1" />
+      <module name="MOBADemoServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.EchoServer (1)" />
       <item itemvalue="Application.OnlyReceiveServer" />
       <item itemvalue="Application.SimpleClient" />
-      <item itemvalue="Application.TestServer" />
       <item itemvalue="Application.TestClient" />
+      <item itemvalue="Application.TestServer" />
+      <item itemvalue="Application.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestClient" />
         <item itemvalue="Application.TestServer" />
+        <item itemvalue="Application.TestClient" />
+        <item itemvalue="Application.test1" />
         <item itemvalue="Application.OnlyReceiveServer" />
         <item itemvalue="Application.SimpleClient" />
-        <item itemvalue="Application.EchoServer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -336,10 +367,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1371" height="860" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49385247" visible="true" weight="0.1914569" />
-      <window_info id="Structure" order="1" sideWeight="0.50614756" side_tool="true" weight="0.44473007" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49281314" visible="true" weight="0.26156813" />
+      <window_info id="Structure" order="1" sideWeight="0.50718683" side_tool="true" weight="0.17866324" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -347,15 +378,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4642857" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.33378196" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293011" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50064266" side_tool="true" weight="0.34185734" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3293011" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3287483" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -394,11 +425,14 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/test/serveer/EchoServer.java" />
     <entry file="file://$PROJECT_DIR$/src/test/serveer/EchoServerHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/Test1.java" />
     <entry file="file://$PROJECT_DIR$/src/test/client/EchChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -451,20 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/SimpleChatServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Protocol/IProtocolBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/server/EchoServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -492,33 +512,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/EchoServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/TestServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="37" column="62" lean-forward="true" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+        <state relative-caret-position="467">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#849#1085#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1421#1977#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/server/SimpleChatServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -527,18 +535,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        <state relative-caret-position="144">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Protocol/ProtocolStr.java">
+    <entry file="file://$PROJECT_DIR$/src/test/test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="172">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -547,8 +555,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/server/decoder/MessageEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        <state relative-caret-position="552">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/client/TestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -557,61 +575,147 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Util/BitConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        <state relative-caret-position="528">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/decoder/MyDecoder1.java">
+    <entry file="file://$PROJECT_DIR$/src/Protocol/IProtocolBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/server/EchoServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="15" column="96" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_171/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="1780" column="18" selection-start-line="1780" selection-start-column="18" selection-end-line="1780" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/TestServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/PlayerLogic/Scene/ScenePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="312">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/server/OnlyReceiveServer.java">
+    <entry file="file://$PROJECT_DIR$/src/PlayerLogic/Scene/Scene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+        <state relative-caret-position="552">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1421#1977#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Protocol/ProtocolBytes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="792">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/client/TestClient.java">
+    <entry file="file://$PROJECT_DIR$/src/test/server/decoder/MyDecoder1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        <state relative-caret-position="-276">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/server/decoder/MessageEncoder1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Protocol/ProtocolStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainServer/MOBAServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1208#1701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/server/TestServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1061#1490#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/server/TestServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProtocolDispatcher/HandlePlayerMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainServer/handler/MOBAServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -675,6 +779,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

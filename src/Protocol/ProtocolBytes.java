@@ -15,8 +15,15 @@ public class ProtocolBytes implements IProtocolBase{
 
     private int start;
 
-    @Override
-    public IProtocolBase Decode(byte[] readbuff, int start, int length) {
+    /**
+     * 从字节缓冲区中的第start个字节开始解码长度为Length的字节流，
+     * 适用于 字节流、字符串流、protocol、json、xml等各类协议
+     * @param readbuff 缓冲区
+     * @param start
+     * @param length
+     * @return
+     */
+    public static ProtocolBytes Decode(byte[] readbuff, int start, int length) {
         ProtocolBytes protocolBytes = new ProtocolBytes();
         protocolBytes.bytes = new byte[length];
         System.arraycopy(readbuff,start, protocolBytes.bytes,0, length);
@@ -30,7 +37,7 @@ public class ProtocolBytes implements IProtocolBase{
 
     @Override
     public String GetName() {
-        return "";
+        return GetString();
     }
 
     @Override

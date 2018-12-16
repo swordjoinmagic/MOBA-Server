@@ -6,6 +6,8 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import test.server.decoder.MessageEncoder;
+import test.server.decoder.MessageEncoder1;
 import test.server.decoder.MyDecoder1;
 
 import java.net.InetSocketAddress;
@@ -36,6 +38,7 @@ public class TestServer {
                     ChannelPipeline pipeline = ch.pipeline();
                     pipeline.addLast(new MyDecoder1(1<<20, 10, 4));
                     pipeline.addLast(new TestServerHandler());
+                    pipeline.addLast(new MessageEncoder1());
                 }
             })
             .option(ChannelOption.SO_BACKLOG,128)

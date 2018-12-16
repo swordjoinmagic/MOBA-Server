@@ -3,6 +3,7 @@ package test.client;
 import Protocol.ProtocolBytes;
 import Util.BitConverter;
 
+import javax.swing.*;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 
@@ -22,6 +23,7 @@ public class TestClient {
 
             ProtocolBytes protocolBytes = new ProtocolBytes();
             protocolBytes.AddString("hello");
+//            protocolBytes.AddFloat(3.1415926f);
             protocolBytes.AddFloat(3.1415926f);
 
             byte[] bytes = protocolBytes.Encde();
@@ -29,8 +31,15 @@ public class TestClient {
             ByteBuffer buffer = ByteBuffer.allocate(4+bytes.length);
             buffer.putInt(bytes.length).put(bytes);
 
+
             socket.getOutputStream().write(buffer.array());
             socket.getOutputStream().flush();
+
+            while (!socket.isClosed()){
+                byte[] bytes1 = new byte[1024];
+                int a = socket.getInputStream().read(bytes1);
+                System.out.println("a:"+a);
+            }
 
             socket.close();
         }catch (Exception e){}

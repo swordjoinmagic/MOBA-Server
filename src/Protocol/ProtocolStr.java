@@ -29,7 +29,6 @@ public class ProtocolStr implements IProtocolBase{
         return bytes;
     }
 
-    @Override
     public IProtocolBase Decode(byte[] readbuff, int start, int length) {
         // 将字节流协议转换为字符串
         ProtocolStr protocol = new ProtocolStr();
