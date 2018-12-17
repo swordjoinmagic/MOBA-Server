@@ -1,6 +1,7 @@
 package MainServer.handler;
 
 import Protocol.ProtocolBytes;
+import ProtocolDispatcher.HandleConnMsg;
 import ProtocolDispatcher.HandlePlayerMsg;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
@@ -10,23 +11,26 @@ import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MOBAServerHandler extends ChannelInboundHandlerAdapter {
 
-    // 用于登录的ChannelGroup
-    public static ChannelGroup loginChannelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+    // 用于划分房间系统区域的ChannelGroup字典,键是房间名，值是房间内所有Channel
+    public static Map<String,ChannelGroup> roomsChannelGroup = new HashMap<>();
 
     public static ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
     private HandlePlayerMsg handlePlayerMsg = new HandlePlayerMsg();
+    private HandleConnMsg handleConnMsg = new HandleConnMsg();
 
     @Override
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception{
         Channel channel = ctx.channel();
 
-        // 将新来的连接加入至登录的ChannelGroup中
-        loginChannelGroup.add(channel);
+        channels.add(channel);
 
-        System.out.println("一个连接被加入了！ 目前登录ChannelGroup共有:"+loginChannelGroup.size()+"个连接");
+        System.out.println("一个连接被加入了！ 目前登录ChannelGroup共有:"+channels.size()+"个连接");
     }
 
     @Override
@@ -53,9 +57,14 @@ public class MOBAServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println("收到协议，协议名为："+name);
 
         try {
-            // 消息分发至对应的处理方法
-            HandlePlayerMsg.class.getMethod("Msg"+name,Channel.class,ProtocolBytes.class)
-                    .invoke(handlePlayerMsg,ctx.channel(),protocolBytes);
+            if(!name.contains("Conn"))
+                // 消息分发至对应的处理方法
+                HandlePlayerMsg.class.getMethod("Msg"+name,Channel.class,ProtocolBytes.class)
+                        .invoke(handlePlayerMsg,ctx.channel(),protocolBytes);
+            else
+                // 协议名含有Conn字样,表示这是玩家尚未登录前的协议
+                HandleConnMsg.class.getMethod("Msg"+name,Channel.class,ProtocolBytes.class)
+                        .invoke(handleConnMsg,ctx.channel(),protocolBytes);
         }catch (Exception e){e.printStackTrace();}
 
     }

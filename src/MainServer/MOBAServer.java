@@ -1,5 +1,6 @@
 package MainServer;
 
+import MainServer.handler.MOBAServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -19,7 +20,7 @@ public class MOBAServer {
     private int port;
 
     public static void main(String[] args){
-        new TestServer(8081).start();
+        new MOBAServer(8081).start();
     }
 
     public MOBAServer(int port){
@@ -39,7 +40,7 @@ public class MOBAServer {
                         public void initChannel(SocketChannel ch) throws Exception{
                             ChannelPipeline pipeline = ch.pipeline();
                             pipeline.addLast(new MyDecoder1(1<<20, 10, 4));
-                            pipeline.addLast(new TestServerHandler());
+                            pipeline.addLast(new MOBAServerHandler());
                             pipeline.addLast(new MessageEncoder1());
                         }
                     })
