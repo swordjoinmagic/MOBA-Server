@@ -177,4 +177,43 @@ public class HandlePlayerMsg {
         return protocol;
 
     }
+
+
+    /**
+     * 处理AniamtionOperation协议
+     * @param channel
+     * @param protocolBytes
+     */
+    public void MsgAnimationOperation(Channel channel, ProtocolBytes protocolBytes){
+        // 直接转发协议
+        MOBAServerHandler.channels.writeAndFlush(protocolBytes.Encde());
+    }
+
+
+    public  void MsgDamage(Channel channel, ProtocolBytes protocolBytes){
+        // 转发
+        MOBAServerHandler.channels.writeAndFlush(protocolBytes.Encde());
+    }
+
+    public void MsgLevel(Channel channel, ProtocolBytes protocolBytes){
+        // 转发
+        MOBAServerHandler.channels.writeAndFlush(protocolBytes.Encde());
+    }
+
+    public void MsgSpellSkill(Channel channel, ProtocolBytes protocolBytes){
+        // 转发
+        MOBAServerHandler.channels.writeAndFlush(protocolBytes.Encde());
+    }
+
+    public void MsgAddItem(Channel channel, ProtocolBytes protocolBytes){
+        // 转发
+        MOBAServerHandler.channels.writeAndFlush(protocolBytes.Encde());
+
+    }
+
+    public void MsgDeleteItem(Channel channel, ProtocolBytes protocolBytes){
+        // 转发
+        MOBAServerHandler.channels.writeAndFlush(protocolBytes.Encde());
+
+    }
 }
