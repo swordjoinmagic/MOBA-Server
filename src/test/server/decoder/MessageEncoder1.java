@@ -9,7 +9,6 @@ public class MessageEncoder1 extends MessageToByteEncoder<byte[]> {
 
     @Override
     protected void encode(ChannelHandlerContext channelHandlerContext, byte[] bytes, ByteBuf byteBuf) throws Exception {
-        System.out.println("发送消息中~");
         ByteBuf buf = Unpooled.copiedBuffer(intToBytes(bytes.length),bytes);
         byteBuf.writeBytes(buf);
     }

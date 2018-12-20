@@ -46,7 +46,6 @@ public class MOBAServer {
                     })
                     .option(ChannelOption.SO_BACKLOG,128)
                     .childOption(ChannelOption.SO_KEEPALIVE,true);
-
             ChannelFuture future = bootstrap.bind().sync();
             System.out.println("服务器启动！正在监听端口");
         }catch (Exception e){}

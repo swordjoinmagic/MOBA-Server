@@ -1,3 +1,6 @@
+# 演示 #
+![Avater](gitImage/show.gif)
+
 # MOBA 服务器 编写思路 #
 ## 技术栈 ##
 ### 服务端 --- 使用JAVA语言 ###

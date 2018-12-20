@@ -24,7 +24,7 @@ public class MyDecoder1 extends LengthFieldBasedFrameDecoder {
 
             // 长度
             int length = buffer.readInt();
-            System.out.println("信息长度:"+length);
+//            System.out.println("信息长度:"+length);
 
             if(buffer.readableBytes() < length){
                 buffer.resetReaderIndex();
@@ -36,7 +36,7 @@ public class MyDecoder1 extends LengthFieldBasedFrameDecoder {
             byte[] bytes = new byte[length];
 
             buffer.readBytes(bytes);
-            System.out.println("解析信息是："+new String(bytes));
+//            System.out.println("解析信息是："+new String(bytes));
             return Unpooled.copiedBuffer(bytes);
         }
         // 缓存当前剩余的buffer数据，等待剩下数据包到来

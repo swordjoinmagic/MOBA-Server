@@ -23,7 +23,7 @@ public class RoomModel {
     // 房间状态
     private RoomStatus roomStatus = RoomStatus.Waiting;
     // 房间内的所有玩家,使用list保存玩家的userName
-    private List<String> players = new ArrayList<>();
+    private List<RoomPlayer> players = new ArrayList<>();
 
     public String getRoomName() {
         return roomName;
@@ -49,7 +49,19 @@ public class RoomModel {
         this.roomStatus = roomStatus;
     }
 
-    public List<String> getPlayers() {
+    public List<RoomPlayer> getPlayers() {
         return players;
+    }
+
+    /**
+     * 根据用户名获得玩家
+     * @param userName
+     */
+    public RoomPlayer GetRoomPlayer(String userName){
+        for(RoomPlayer player : players){
+            if(userName.equals(player.getUserName()))
+                return player;
+        }
+        return null;
     }
 }

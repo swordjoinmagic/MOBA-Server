@@ -21,8 +21,8 @@ public class MOBAServerHandler extends ChannelInboundHandlerAdapter {
 
     public static ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
-    private HandlePlayerMsg handlePlayerMsg = new HandlePlayerMsg();
-    private HandleConnMsg handleConnMsg = new HandleConnMsg();
+    private static HandlePlayerMsg handlePlayerMsg = new HandlePlayerMsg();
+    private static HandleConnMsg handleConnMsg = new HandleConnMsg();
 
     @Override
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception{
@@ -54,7 +54,7 @@ public class MOBAServerHandler extends ChannelInboundHandlerAdapter {
     private void HandleMsg(ChannelHandlerContext ctx, ProtocolBytes protocolBytes){
         String name = protocolBytes.GetName();
 
-        System.out.println("收到协议，协议名为："+name);
+//        System.out.println("收到协议，协议名为："+name);
 
         try {
             if(!name.contains("Conn"))

@@ -5,6 +5,8 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 
+import java.nio.charset.Charset;
+
 /**
  * 字节流协议
  */
